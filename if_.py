@@ -1,4 +1,4 @@
-'''
+
 # 1330번
 a,b = map(int, input().split())
 if a > b :
@@ -36,13 +36,14 @@ elif (num1 < 0) and (num2 > 0) : print(2)
 elif (num1 < 0) and (num2 < 0) : print(3)
 elif (num1 > 0) and (num2 < 0) : print(4)
 
+
 # 2884번 (틀림)
 H, M = map(int, input().split())
 if M < 45:
     if H == 0: H = 24
     print(H-1, (60-45+M), sep=' ' )
 
-# 다른 사람 답 참고
+# 참고 1
 H, M = map(int, input().split())
 if M > 44:
     print(H, M-45)
@@ -52,7 +53,6 @@ elif H == 0:
     H = 24
     print(H-1, M+15)
 
-'''
 
 # 참고 2
 H, M = map(int, input().split())

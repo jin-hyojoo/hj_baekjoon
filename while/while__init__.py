@@ -1,4 +1,4 @@
-'''
+
 # 10952번
 import sys
 while True:
@@ -8,6 +8,7 @@ while True:
     if (a == 0 and b == 0): break
     else : print(a+b)
 
+
 #10951번
 # 테스트 케이스가 정해지지 않아 무한반복 되는 while문은 오류처리 요함
 while True:
@@ -15,7 +16,8 @@ while True:
         a,b = map(int, input().split())
         print(a+b)
     except: break
-'''
+
+
 # 1110번
 N, cycleCnt, tmpN = int(input()), 0, 0
 tmpN = N
@@ -29,3 +31,12 @@ while True:
     if tmpN == N: break
 print(cycleCnt)
 
+
+# 1110번 더 간략히 풀어보기
+N, cycleCnt = int(input()), 0
+tmpN = N
+while True:
+    tmpN = ((tmpN%10)*10) + (((tmpN//10)+(tmpN%10))%10)
+    cycleCnt += 1
+    if tmpN == N: break
+print(cycleCnt)
